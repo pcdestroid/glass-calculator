@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('background.jpeg') no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.calculator {
+    color: white;
+    position: relative;
+    width: 300px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    background-color: rgba(0, 0, 0, 0.301);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform .5s, height .2s ease;
+    margin: 5px 0 0 0;
+    min-width: 300px;
+
+}
+
+.calculator .display {
+    border: 2px solid rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, 0.219);
+    position: relative;
+    width: 85%;
+    height: 75px;
+    padding: 5px 5px;
+    top: 10px;
+    margin: 15px 0 30px 0;
+    border-radius: 6px;
+    align-items: center;
+    align-content: center;
+    justify-content: right;
+    display: flex;
+    font-size: 1.5em;
+    overflow: hidden;
+}
+
+.calculator button {
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.295);
+    position: relative;
+    border-radius: 6px;
+    font-size: 1.5em;
+    height: 50px;
+    width: 60px;
+    margin: 1px 0 5px 0;
+    top: 5px;
+    background: transparent;
+    background: rgba(255, 255, 255, 0.26);
+    transition: background-color 0.8s ease;
+}
+
+.calculator button:hover {
+    background: rgba(48, 48, 48, 0.26);
+}
+
+.calculator .igualdade {
+    background-color: rgba(0, 81, 255, 0.432);
+}
